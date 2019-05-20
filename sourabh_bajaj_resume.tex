@@ -1,0 +1,149 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/himanshu-mishra-93222819/}{\Large Himanshu Mishra}} & Email : \href{mailto:contact.himanshumishra@gmail.com}{contact.himanshumishra@gmail.com}\\
+  \href{https://www.linkedin.com/in/himanshu-mishra-93222819}{https://www.linkedin.com/in/himanshu-mishra-93222819} & Mobile : +91-8178676639 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maharaja Surajmal Institute of Technology}{New Delhi}
+      {Bachelor of Technology}{2012 -- 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Invendis Technologies Pvt Ltd}{Bengaluru, KA}
+      {Senior Software Engineer}{April 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{SNMP library and data acquisition}
+          {Created a lightweight SNMP library to encode/decode SNMPv2 PDUs and implemented the data acquisition from SNMP based controllers using the library created.}
+        \resumeItem{AWS IoT SDK and TLS}
+          {Added TLS support to the firmware using mbedTLS and LWIP TCP/IP stack and added support for posting data to AWS servers in JSON format using AWS IoT SDK.}
+        \resumeItem{Micropython}
+          {Ported Micropython engine to the our Cortex-M7 based board.}
+        \resumeItem{Embedded HTTP server}
+          {Created a simple embedded HTTP server to serve the HTML/CSS and Javascript files from the Cortex-M7 based cusom board. It was implemented to serve the interface used for configuring the device.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Invendis Technologies Pvt Ltd}{Bengaluru, KA}
+      {Software Engineer}{November 2016 - March 2018}
+      \resumeItemListStart
+        \resumeItem{Modbus Decoder}
+	  {Designed and Created a generic Modbus decoder(in C, Java and Python) that works based on the configuration provided in form of JSON and decodes Modbus register data of any controller for which the configuration is provided and outputs the result in form of HashMap/Dictionary/Linked list.}
+        \resumeItem{Modbus Simulator}
+          {Created a Simulator that acts as a modbus TCP Solar Controller and responds to Modbus TCP requests and provides dynamic data based on the Radiation data, capacity and efficiency given as input.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amkette}{New Delhi}
+      {Intern}{June 2015 - March 2016}
+      \resumeItemListStart
+        \resumeItem{Amkette evoTV 2}
+          {Done hardware performace testing and profiling to select the best suitable hardware for the intended purpose. Did blackbox and greybox testing on the system software created for the evoTV.}
+        \resumeItem{Evo Gamepad App}
+          {Tested and help optimize the EvoTV Gamepad App for Android.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Object Follower}
+      {Created an Object follwer robot using Open Computer Vision library on Raspberry pi 2.}
+    \resumeSubItem{Voice Controlled Home}
+      {Created a Voice controlled home automation system using CMUSphinx and Raspberry pi 2.}
+  \resumeSubHeadingListEnd
+
+
+--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C, Java, SQL, Python, Perl}
+      \hfill
+      \textbf{Tools and Technologies}{: Linux, FreeRTOS, AWS IoT embedded, GNU Make, SVN, ARM Cortex-M7, Raspberry Pi}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
